@@ -1,0 +1,20 @@
+body{
+  display: grid;
+}
+
+.myGrid {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  max-width: 980px;
+  background: whitesmoke;
+}
+
+.sqrs {
+  background: white;
+}
+.sqrs:empty:before {content: '\a0';}
+button{
+  border: none;
+  cursor: pointer;
+}

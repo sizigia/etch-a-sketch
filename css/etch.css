@@ -22,8 +22,14 @@ body {
   color: rgb(235, 101, 101);
 }
 
-.myGrid {
+.border {
   grid-area: 2/2/4/4;
+  align-self: center;
+  justify-content: center;
+  background: brown;
+}
+
+.myGrid {
   align-self: center;
   justify-content: center;
   display: grid;

@@ -1,20 +1,39 @@
-body{
+:root {
+  --sqr-per-side: 16;
+}
+
+body {
   display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  background-color: antiquewhite;
+}
+
+.container {
+  grid-area: 1/1/2/5;
+  justify-self: center;
+  align-self: center;
+}
+
+.title {
+  font-family: 'Pacifico', cursive;
+  font-size: 105px;
+  text-shadow: 0px 6px rgb(187, 53, 53);
+  color: rgb(235, 101, 101);
 }
 
 .myGrid {
+  grid-area: 2/2/4/4;
+  align-self: stretch;
+  justify-content: center;
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
-  max-width: 980px;
-  background: whitesmoke;
+  grid-template-columns: repeat(var(--sqr-per-side), 5px);
+  grid-template-rows: repeat(var(--sqr-per-side), 5px);
+  align-items: stretch;
 }
 
 .sqrs {
-  background: white;
+  background: whitesmoke;
 }
+
 .sqrs:empty:before {content: '\a0';}
-button{
-  border: none;
-  cursor: pointer;
-}

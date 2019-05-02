@@ -26,10 +26,13 @@ body {
   grid-area: 2/2/4/4;
   align-self: center;
   justify-content: center;
-  background: brown;
 }
 
 .myGrid {
+  border-width: 20px;
+  border-style: ridge;
+  border-color: #c92222;
+  border-radius: 39px;
   align-self: center;
   justify-content: center;
   display: grid;

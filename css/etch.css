@@ -24,12 +24,11 @@ body {
 
 .myGrid {
   grid-area: 2/2/4/4;
-  align-self: stretch;
+  align-self: center;
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(var(--sqr-per-side), 5px);
   grid-template-rows: repeat(var(--sqr-per-side), 5px);
-  align-items: stretch;
 }
 
 .sqrs {

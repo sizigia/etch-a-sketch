@@ -7,6 +7,15 @@ title.className = 'title';
 title.innerHTML = "Etch-A-Sketch";
 headContainer.appendChild(title);
 
+const border = document.createElement('div');
+border.className = 'border';
+document.body.appendChild(border);
+
+const myGrid = document.createElement('div');
+myGrid.className = 'myGrid';
+border.appendChild(myGrid);
+
+
 function sqrDivs(num, nameClass) {
     var i = 1;
     do {
@@ -19,10 +28,8 @@ function sqrDivs(num, nameClass) {
         i++;
     } while (i <= num);
 }
-const myGrid = document.createElement('div');
-myGrid.className = 'myGrid';
-document.body.appendChild(myGrid);
 
 const sq = window.prompt('How many squares per side?');
 sqrDivs(sq * sq, 'sqrs');
 myGrid.style.setProperty("--sqr-per-side", sq);
+

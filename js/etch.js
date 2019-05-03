@@ -29,7 +29,10 @@ function sqrDivs(num, nameClass) {
     } while (i <= num);
 }
 
-const sq = window.prompt('How many squares per side?');
+var sq = window.prompt('How many squares per side?');
+if (sq == null) {
+    sq = 20;
+}
 sqrDivs(sq * sq, 'sqrs');
 myGrid.style.setProperty("--sqr-per-side", sq);
 const pixSize = (400 / sq) + 'px';

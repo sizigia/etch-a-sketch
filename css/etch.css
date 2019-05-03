@@ -30,6 +30,12 @@ body {
   align-self: center;
 }
 
+#btnContainer {
+  grid-area: 2/1/4/2;
+  align-self: center;
+  justify-self: center;
+}
+
 #title {
   font-family: 'Pacifico', cursive;
   font-size: 105px;

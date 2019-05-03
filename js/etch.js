@@ -20,11 +20,16 @@ function sqrDivs(num, nameClass) {
 
 function setUp() {
     var sq = window.prompt('How many squares per side?');
-    if (sq === null) {
-        sq = 20;
+    if (sq === null || sq == 0) {
+        sq = 16;
     }
     sqrDivs(sq * sq, 'sqrs');
     myGrid.style.setProperty("--sqr-per-side", sq);
     const pixSize = (400 / sq) + 'px';
     myGrid.style.setProperty("--pix-size", pixSize);
 }
+
+reset.addEventListener("click", () => {
+    myGrid.innerHTML = '';
+    return setUp();
+});

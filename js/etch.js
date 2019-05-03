@@ -15,6 +15,11 @@ const myGrid = document.createElement('div');
 myGrid.className = 'myGrid';
 border.appendChild(myGrid);
 
+const reset = document.createElement('button');
+reset.id = 'reset';
+reset.innerHTML = "Play Again";
+document.body.appendChild(reset);
+
 
 function sqrDivs(num, nameClass) {
     var i = 1;

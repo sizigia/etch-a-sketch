@@ -3,11 +3,11 @@
   --pix-size: 0;
 }
 
-* {
+/* {
   margin: 0;
   padding: 0;
   border: 0;
-}
+}*/
 
 body {
   display: grid;
@@ -24,20 +24,20 @@ body {
   border-color: rgb(235, 101, 101);
 }
 
-.container {
+#container {
   grid-area: 1/1/2/5;
   justify-self: center;
   align-self: center;
 }
 
-.title {
+#title {
   font-family: 'Pacifico', cursive;
   font-size: 105px;
   text-shadow: 0px 6px rgb(187, 53, 53);
   color: rgb(235, 101, 101);
 }
 
-.border {
+#border {
   grid-area: 2/2/4/4;
   align-self: center;
   justify-content: center;

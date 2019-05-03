@@ -32,4 +32,6 @@ function sqrDivs(num, nameClass) {
 const sq = window.prompt('How many squares per side?');
 sqrDivs(sq * sq, 'sqrs');
 myGrid.style.setProperty("--sqr-per-side", sq);
+const pixSize = (400 / sq) + 'px';
+myGrid.style.setProperty("--pix-size", pixSize);
 

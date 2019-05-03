@@ -1,5 +1,12 @@
 :root {
-  --sqr-per-side: 16;
+  --sqr-per-side: 0;
+  --pix-size: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
@@ -26,18 +33,21 @@ body {
   grid-area: 2/2/4/4;
   align-self: center;
   justify-content: center;
-}
-
-.myGrid {
   border-width: 20px;
   border-style: ridge;
   border-color: #c92222;
   border-radius: 39px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+  
+.myGrid {
   align-self: center;
   justify-content: center;
   display: grid;
-  grid-template-columns: repeat(var(--sqr-per-side), 5px);
-  grid-template-rows: repeat(var(--sqr-per-side), 5px);
+  grid-template-columns: repeat(var(--sqr-per-side), var(--pix-size));
+  grid-template-rows: repeat(var(--sqr-per-side), var(--pix-size));
 }
 
 .sqrs {

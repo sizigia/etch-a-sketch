@@ -16,6 +16,14 @@ body {
   background-color: antiquewhite;
 }
 
+#reset{
+  font-family: 'Pacifico';
+  font-size: 25px;
+  border: solid;
+  border-radius: 40px;
+  border-color: rgb(235, 101, 101);
+}
+
 .container {
   grid-area: 1/1/2/5;
   justify-self: center;
